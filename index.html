@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resource/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Rubik+Iso&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="todo">
+        <section class="left">
+            <p class="brand">Authify</p>
+            <p class="slogan">Secure authentication made easy</p>
+        </section>
+        <section class="right">
+            <div class="loginSec">
+                <div class="circleDiv"></div>
+                
+                <form class="formLogin" method="post" action="function/login.php">
+                    <p class="hw">Hello World</p>
+                    <div class="dataForm">
+                        <div class="form-group">
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                          </div>
+                          <div class="form-group">
+                            <input name="passwd" type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                          </div>
+                          <button name="submit" type="submit" class="btn btn-primary btnLogin">Login</button>
+                    </div>
+                    <span class="signup">Não tem uma conta? <span>Cadastrar</span></span>
+                </form>
+            </div>
+            <p class="by">created by: James Santos</p>
+        </section>
+    </div>
+</body>
+</html>

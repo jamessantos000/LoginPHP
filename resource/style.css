@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.left{
+    background-color: #141414;
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 5%;
+}
+.right{
+    background-color: #DD424C;
+    height: 100vh;
+    width: 40vw;
+}
+
+.loginSec{
+    background-color: #eaeaea;
+    height: 50vh;
+    width: 40vw;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transform: translate(-25%, -25%);
+    border-radius: 20px;
+}
+.circleDiv{
+    width: 50px;
+    height: 50px;
+    background-color: #DD424C;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-25%, -25%);
+    border: 10px solid #ffff;
+}
+
+.brand{
+    color: rgb(237, 24, 60);
+    font-family: 'Secular One', sans-serif;
+    font-size: 8rem;
+    /* transform: translate(-25%); */
+}
+.slogan{
+    color: rgb(168, 17, 42);
+    font-size: 1.5rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.hw{
+    font-family: 'Rubik Iso', cursive;
+    text-align: center;
+    font-size: 6rem;
+}
+.dataForm input{
+    border-radius: 50px;
+    padding: 25px 20px;
+    border: 0;
+    margin-bottom: 30px;
+}
+.dataForm input::placeholder{
+    color: #C6C6C6;
+}
+.dataForm{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 5px;
+}
+.btnLogin{
+    background-color: #171717 !important;
+    padding: 5% !important;
+    width: 100%;
+    border-radius: 50px !important;
+    border: 0 !important;
+}
+.signup{
+    text-align: center;
+    font-size: 15;
+    font-family: 'Lato', sans-serif;
+    color: rgb(40,40,40);
+    font-weight: bold;
+}
+.signup span{
+    color: #dd424c;
+    cursor: pointer;
+}
+
+.right .by{
+    display: flex;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+@media screen and (max-height: 950px) {
+    .hw{
+        font-size: 4vw;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-height: 890px){
+    .hw{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .dataForm input{
+        padding: 15px 10px;
+    }
+    .btnLogin{
+        padding: 4% !important;
+        margin-bottom: 20px;
+    }
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .hw{
+        margin-bottom: 10px;
+    }
+    .btnLogin{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+    }
+    .brand{
+        font-size: 4rem;
+        position: absolute;
+        top: 0;
+        left: 25px;
+    }
+    .slogan{
+        font-size: 1rem;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: white;
+    }
+    .loginSec{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+    }
+    .hw{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .left{
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .brand{
+        background-color: #141414;
+        position: initial;    
+        transform: translate(50%, 25%);   
+        border-radius: 50px; 
+    }
+    .slogan{
+        background-color: #DD424C;
+        position: initial;
+        transform: translate(50%, 50%);  
+        border-radius: 50px; 
+    }
+    .dataForm{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .brand{
+        font-size: 2rem;
+    }
+    .slogan{
+        font-size: 1rem;
+    }
+}
